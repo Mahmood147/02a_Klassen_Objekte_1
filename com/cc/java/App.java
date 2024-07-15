@@ -8,13 +8,21 @@ public class App {
     
        Cat cat = new Cat(); 
        System.out.println("Blick von aussen " + cat);
-       cat.tellYourAddress();
-
+       output("Fuck yuu " + cat.getInstanceVariable());
+        
+       output("Test");
 
        Cat cat2 = new Cat();
        System.err.println("Blick von aussen " + cat2);
-        cat2.tellYourAddress();
+        cat2.getInstanceVariable();
 
    }
+    public static void output(String outputStr){
+         System.out.println(outputStr);
+
+
+    }
+
+
 
 }
